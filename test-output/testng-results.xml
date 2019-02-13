@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="83609" started-at="2019-02-13T17:12:20Z" finished-at="2019-02-13T17:13:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="83609" started-at="2019-02-13T17:12:20Z" finished-at="2019-02-13T17:13:44Z">
+      <class name="TestScripts.SearchTestScript">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:TestScripts.SearchTestScript@42d80b78]" name="launchBrowser" is-config="true" duration-ms="4385" started-at="2019-02-13T17:12:20Z" finished-at="2019-02-13T17:12:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="searchAndVerifyProductDetails()[pri:0, instance:TestScripts.SearchTestScript@42d80b78]" name="searchAndVerifyProductDetails" duration-ms="78317" started-at="2019-02-13T17:12:24Z" description="Search with &#039;Data Catalog&#039; text and verify first product details" finished-at="2019-02-13T17:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndVerifyProductDetails -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScripts.SearchTestScript@42d80b78]" name="closeBrowser" is-config="true" duration-ms="833" started-at="2019-02-13T17:13:43Z" finished-at="2019-02-13T17:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScripts.SearchTestScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
