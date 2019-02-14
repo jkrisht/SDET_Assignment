@@ -68,6 +68,11 @@ public class ProductDetailsPage extends BaseActions {
 			if(super.verifyElement(WebLocators.productDetils_paperback_old_price)) {
 				System.out.println("Paperback old price: "+super.locateElement(WebLocators.productDetils_paperback_old_price).getText());
 			}
+			
+			// Print price if only new book available
+			if(verifyElement(WebLocators.productDetils_book_price)) {
+				System.out.println("Paperback price: "+super.locateElement(WebLocators.productDetils_book_price).getAttribute("innerHTML").trim());
+			}
 		}
 		
 		// Kindle price
@@ -75,9 +80,9 @@ public class ProductDetailsPage extends BaseActions {
 			// Click on 'Kindle' tab
 			kindleTab_element.click();
 			// Wait for the element
-			new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(locateElement(WebLocators.productDetils_kindle_price)));
+			new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(locateElement(WebLocators.productDetils_book_price)));
 			// Print book price
-			System.out.println("Kindle price: "+super.locateElement(WebLocators.productDetils_kindle_price).getAttribute("innerHTML").trim());
+			System.out.println("Kindle price: "+super.locateElement(WebLocators.productDetils_book_price).getAttribute("innerHTML").trim());
 		}
 		
 		System.out.println();

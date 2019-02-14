@@ -34,7 +34,7 @@ public class HomePage extends BaseActions {
 
 		// Click on search dropdown to expand the details
 		//driver.findElement(WebLocators.homePage_search_dropdown).click();
-		super.clickUsingJS(WebLocators.homePage_search_dropdown);
+		super.clickUsingJS(WebLocators.homePage_search_All);
 
 		// Select the value with given text
 		Select select = new Select(BaseActions.locateElement(WebLocators.homePage_search_dropdown));
