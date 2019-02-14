@@ -20,7 +20,7 @@ public class WebLocators {
 	public static By productDetils_tabs					= By.cssSelector("span[class='a-size-large mediaTab_title']");
 	//'Paperback' book prices
 	public static By productDetils_paperback_new_price	= By.cssSelector("div[id='newOfferAccordionRow'] span[class*='header-price']");
-	public static By productDetils_paperback_old_price	= By.id("div[id='usedOfferAccordionRow'] span[class*='header-price']");
+	public static By productDetils_paperback_old_price	= By.cssSelector("div[id='usedOfferAccordionRow'] span[class*='header-price']");
 	
 	// 'Kindle' edition price
 	public static By productDetils_kindle_price			= By.cssSelector("div[id='mediaNoAccordion'] span[class*='header-price']");

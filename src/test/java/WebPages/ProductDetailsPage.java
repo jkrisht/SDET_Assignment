@@ -54,7 +54,7 @@ public class ProductDetailsPage extends BaseActions {
 					bookTypes = bookTypes + webElement.getText()+", ";
 				}
 			}
-			System.out.println("Book Types: "+ bookTypes);
+			System.out.println("Book Available Types: "+ bookTypes);
 		}
 		
 		// Print book prices
@@ -77,7 +77,7 @@ public class ProductDetailsPage extends BaseActions {
 			// Wait for the element
 			new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(locateElement(WebLocators.productDetils_kindle_price)));
 			// Print book price
-			System.out.println("Kindle price: "+super.locateElement(WebLocators.productDetils_kindle_price).getAttribute("innerHTML"));
+			System.out.println("Kindle price: "+super.locateElement(WebLocators.productDetils_kindle_price).getAttribute("innerHTML").trim());
 		}
 		
 		System.out.println();
